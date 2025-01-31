@@ -8,7 +8,16 @@
 @font-face {
   font-family: "Main";
   src: url(./assets/fonts/Poppins-Regular.ttf);
-  font-weight: 200 600;
+}
+
+@font-face {
+  font-family: "Light";
+  src: url(./assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(./assets/fonts/Poppins-SemiBold.ttf);
 }
 
 /* CSS Variables */
@@ -25,6 +34,8 @@
   --Very-Dark-Blue: hsl(234, 12%, 34%);
   --Grayish-Blue: hsl(229, 6%, 66%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  height: 100%;
 }
 
 html {
@@ -33,6 +44,93 @@ html {
 
 body {
   font-family: "Main";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--Very-Light-Gray);
+}
+
+header {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 32px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px -10px var(--Grayish-Blue);
+}
+
+.supervisor {
+  border-top: 4px solid var(--Cyan);
+}
+
+.supervisor,
+.column {
+  margin-right: 30px;
+}
+
+.team-builder {
+  margin-bottom: 30px;
+  border-top: 4px solid var(--Red);
+}
+
+.karma {
+  border-top: 4px solid var(--Orange);
+}
+
+.calculator {
+  border-top: 4px solid var(--Blue);
+}
+
+article img {
+  align-self: flex-end;
+}
+
+h1 {
+  font-family: "Light";
+  font-weight: 200;
+  font-size: 29px;
+  color: var(--Very-Dark-Blue);
+}
+
+header h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Bold";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Light";
+  font-size: 13px;
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+}
+
+article > h2 {
+  margin-bottom: 10px;
+}
+
+article p {
+  margin-bottom: 35px;
+  line-height: 1.8;
 }
 
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */
