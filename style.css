@@ -135,6 +135,40 @@ article p {
 
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  header,
+  article {
+    width: 80%;
+  }
+
+  header {
+    margin: 200px 40px 60px 40px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .column {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .supervisor,
+  .team-builder,
+  .karma,
+  .calculator {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
